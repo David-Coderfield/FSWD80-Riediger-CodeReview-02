@@ -1,0 +1,41 @@
+// BREAKPOINT BETWEEN 641px to 1200px FOR TABLETS
+@media screen and (max-width: 1200px) and (min-width: 641px)
+	.wrapper
+		width: 90% //slims down padding for whole page
+	.flexbox1, .flexbox2
+		p
+			padding: 0.2vw
+			font-size: 1.4vw !important
+
+
+// BREAKPOINT FOR <=640px MOBILE
+@media screen and (max-width: 640px)
+	.hide-mobile
+		display: none !important //classname used throughout the html to hide stuff on mobile
+	.hide-desktop
+		display: block !important //show what was hidden in desktop version
+	.wrapper
+		width: 100% //get rid of outermost wrapping "padding"
+	.logos img
+		width: 60% !important //make logo big again
+	nav
+		text-align: center //----------NAV-BAR-----------
+		ul
+			padding: 0
+			margin: 0 auto
+			li
+				padding: 4px 1.6vw
+			li a
+				font-size: 5vw
+	.flex div
+		flex-basis: 47% !important //FLEXBOX MAKE EVERYTHING 2 COLUMNS
+		height: 29vw !important
+		margin: 1.5%
+		img
+			margin-bottom: 2vw
+		p
+			font-size: 2.6vw !important
+			padding: 0.2vw
+	footer *
+		text-align: center !important //FOOTER: center everything
+		margin: 0 auto !important

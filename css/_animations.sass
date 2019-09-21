@@ -1,0 +1,79 @@
+.heading
+	-webkit-animation-name: shift-in
+	-webkit-animation-duration: 0.8s
+	-webkit-animation-timing-function: ease-out
+	animation-name: shift-in
+	animation-duration: 0.8s
+	animation-timing-function: ease-out
+
+	@keyframes shift-in
+		0%
+			transform: translate(-2000px,0px)
+		60%
+			transform: translate(-200px,0px)
+		80%
+			transform: translate(-100px,20px)
+		100%
+			transform: translate(0px,0px)
+
+.heading h2
+	-webkit-animation-name: stretchY
+	-webkit-animation-duration: 1s
+	-webkit-animation-delay: 0.8s
+	animation-name: stretchY
+	animation-duration: 1s
+	animation-delay: 0.8s
+
+	@keyframes stretchY
+		0%
+			transform: scale(1,1)
+		80%
+			transform: scale(1,1)
+		100%
+			transform: scale(1,2)
+
+.right
+	-webkit-animation-name: rotateXXX
+	-webkit-animation-duration: 2s
+	animation-name: rotateXXX
+	animation-duration: 2s
+
+	@keyframes rotateXXX
+		from
+			transform: rotateX(90deg)
+		to
+			transform: rotateX(0deg)
+
+.flex div
+	// transition: 0.8s by writing it in the hover itself, the going-back animation is skipped
+.flex div:hover
+	transition: 0.8s
+	transform: scale(1.15)
+
+.bigheading img
+	transition: 1s
+.bigheading img:hover
+	transform: rotate3d(1,-1,0,50deg)
+
+.trees span:nth-child(odd):hover
+	transition: 0.1s
+	transform: rotateZ(180deg)
+.trees span:nth-child(even):hover
+	transition: 0.1s
+	transform: rotateZ(-180deg)
+
+.tech h1
+	-webkit-animation-name: rotate
+	-webkit-animation-duration: 1s
+	-webkit-animation-timing-function: linear
+	-webkit-animation-iteration-count: infinite
+	animation-name: rotate
+	animation-duration: 1s
+	animation-timing-function: linear
+	animation-iteration-count: infinite
+
+	@keyframes rotate
+		0%
+			transform: rotateZ(0deg)
+		100%
+			transform: rotateZ(360deg)

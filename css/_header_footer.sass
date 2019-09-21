@@ -1,0 +1,78 @@
+//HEADER LOGOS
+.logos
+	background: linear-gradient(to right, #551012, #43151A)
+	display: inline-block
+	width: 100%
+	padding: 2% 0
+	vertical-align: middle
+	.flexbox-header
+		display: flex
+		align-items: center
+		padding: 0 3%
+		overflow: hidden
+		div
+			.header-item1
+			flex-grow: 2
+			padding-right: 9%
+			.header-item2
+			flex-grow: 5 //keep ratio of around 1st-img-width:2nd-img-width
+			img
+				width: 100%
+
+//TOP-NAV-BAR
+nav
+	background: #131313
+	width: 100%
+	display: block
+	margin-bottom: 1vw
+	ul
+		margin: 0
+		padding: 0 10px
+		list-style-type: none
+		display: inline-block
+		li
+			float: left
+			padding: 5px 1.6vw
+			a
+				text-decoration: none
+				color: #ffffff
+				font-size: 3vw
+			a.you_are_here
+				color: #ffffaa
+		li:hover
+			background: #464646
+
+//FOOTER
+footer
+	background: #000000
+	width: 100%
+	margin-top: 3vw
+	.bottomnav
+		padding: 10px 10px 25px
+		ul
+			display: inline-block
+			margin: 0
+			padding: 0 10px
+			list-style-type: none
+			li
+				float: left
+				padding: 5px
+				a
+					text-decoration: none
+					color: #dddddd
+					font-size: 16px
+				a:hover
+					text-decoration: underline
+	.bottomnav:after
+		content: ""
+		display: table
+		clear: both
+	.align--right--center
+		margin: 0 25px
+		text-align: right
+	p
+		padding: 25px 0 10px
+		clear: both
+		text-align: center
+		color: #dddddd
+		size: 12px
