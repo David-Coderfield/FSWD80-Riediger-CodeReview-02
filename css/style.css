@@ -169,12 +169,15 @@ main {
 
 .trees {
   cursor: crosshair;
-  font-size: 2em; }
+  font-size: 2em;
+  background: #F7E7CE;
+  -webkit-box-shadow: 10px 10px 15px 4px #000000;
+  -moz-box-shadow: 10px 10px 15px 4px #000000;
+  box-shadow: 10px 10px 15px 4px #000000; }
   .trees span {
     display: inline-block;
     transition: 10s;
-    margin: -5px;
-    padding: 0; }
+    font-family: "Times New Roman", serif; }
 
 @media screen and (max-width: 1200px) and (min-width: 641px) {
   .wrapper {
